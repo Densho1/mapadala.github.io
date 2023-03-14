@@ -2,7 +2,7 @@
   "name": "mapadala",
   "version": "1.0.0",
   "description": "ENGG 150 Namria Chatbot for the graduate in 2023 lezgo",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
