@@ -1,0 +1,23 @@
+{
+  "name": "mapadala",
+  "version": "1.0.0",
+  "description": "ENGG 150 Namria Chatbot for the graduate in 2023 lezgo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Densho1/ENGG150MAPadala.git"
+  },
+  "author": "Dennis Christian Roxas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Densho1/ENGG150MAPadala/issues"
+  },
+  "homepage": "https://github.com/Densho1/ENGG150MAPadala#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
