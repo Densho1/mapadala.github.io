@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const cors = require('cors')
+const cors = require('cors');
 
 const app = express();
 app.use(
@@ -10,6 +10,10 @@ app.use(
 )
 
 app.use('/', express.static(__dirname));
+
+app.use('/', function (req, res) {
+    res.header("Access-Control-Allow-Origin", "*");
+})
 
 app.use((req, res) => {
     res.status(404);
