@@ -5,7 +5,7 @@ const cors = require('cors')
 const app = express();
 app.use(
     cors({
-        origin : "https://densho1.github.io",
+        origin : "*",
     })
 )
 
