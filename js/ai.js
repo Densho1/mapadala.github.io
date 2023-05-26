@@ -19,6 +19,8 @@ function start() {
                 let res = "";
                 //await axios.get(`https://api.monkeydev.com/fun`)
                 await axios.get(`https://chatbot-api.gq/?message=${req}`).then(data => {
+                    console.log("GET Response");
+                    console.log(data.data);
                     res = JSON.stringify(data.data.response);
                 })
                 let msg_req = document.createElement('div');
