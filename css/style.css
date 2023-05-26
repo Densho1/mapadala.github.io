@@ -96,3 +96,38 @@ h3{
 #send:active {
     font-size: 16px;
 }
+.left, .right{
+    font-size:18px;
+    font-family:monospace;
+    display:inline-block;
+    padding:14px;
+    width:auto;
+    max-width:60%;
+    margin:8px 14px;  
+    word-wrap:break-word;
+}
+
+.msgCon1, .msgCon2{
+    width: 100%;
+    display: inline-block;
+}
+
+.left{
+    color:#000;
+    background:#b3bfca;
+    border-radius:0 16px 16px 16px;
+}
+
+.right{
+    float:right;
+    color:#fff;
+    background:#1c1f46;
+    border-radius:16px 16px 0 16px;
+}
+
+#msg{
+    overflow-y:scroll;
+      height:82%;
+      padding:0 12px;
+      scroll-behavior:smooth;
+}
