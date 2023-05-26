@@ -18,7 +18,7 @@ function start() {
             else {
                 let res = "";
                 //await axios.get(`https://api.monkeydev.com/fun`)
-                await axios.get(`https://api.monkedev.com/fun/chat?msg=${req}`).then(data => {
+                await axios.get(`https://chatbot-api.gq/?message=${req}`).then(data => {
                     res = JSON.stringify(data.data.response);
                 })
                 let msg_req = document.createElement('div');
@@ -45,6 +45,12 @@ function start() {
                 Con2.appendChild(msg_res);
 
                 document.getElementById('text').value = "";
+
+                function scroll() {
+                    var scrollMsg = document.getElementById('msg_area');
+                    scrollMsg.scrollTop = scrollMsg.scrollHeight;
+                }
+                scroll();
             }
                 
         }
